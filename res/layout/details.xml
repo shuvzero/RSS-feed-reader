@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:paddingLeft="10dp"
+              android:paddingRight="10dp"
+              android:background="@drawable/gradient_bg">
+
+    <Button
+            android:id="@+id/back"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="Back"
+            android:textColor="#040404"
+            android:background="@drawable/back_with_border_dark"
+            android:layout_marginTop="3dp"
+            android:onClick=""/>
+
+    <TextView
+            android:id="@+id/title"
+            android:textAppearance="?android:attr/textAppearanceListItemSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#040404"/>
+
+    <TextView
+            android:id="@+id/pubDate"
+            android:textAppearance="?android:attr/textAppearanceListItemSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#040404"/>
+
+    <TextView
+            android:id="@+id/description"
+            android:textAppearance="?android:attr/textAppearanceListItemSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#040404"/>
+
+</LinearLayout>

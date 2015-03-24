@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:paddingLeft="10dp"
+              android:paddingRight="10dp"
+              android:orientation="vertical"
+              android:background="#ffffff">
+
+    <EditText
+            android:id="@+id/url"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:textColor="#040404"
+            android:textCursorDrawable="@null"
+            android:hint="RSS feed"
+            android:padding="3dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/back_with_border"/>
+
+    <EditText
+            android:id="@+id/filter"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:textColor="#040404"
+            android:textCursorDrawable="@null"
+            android:layout_toRightOf="@id/url"
+            android:hint="filter"
+            android:padding="3dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/back_with_border"/>
+
+    <Button
+            android:id="@+id/load"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:text="Load"
+            android:textColor="#040404"
+            android:background="@drawable/back_with_border_dark"
+            android:layout_toRightOf="@id/filter"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="3dp"
+            android:onClick=""/>
+
+    <ListView
+            android:id="@+id/rssItems"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/load"
+            android:divider="#b5b5b5"
+            android:dividerHeight="1dp"
+            android:listSelector="@drawable/list_selector"
+            />
+
+</RelativeLayout>
+
